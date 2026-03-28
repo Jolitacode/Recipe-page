@@ -14,6 +14,17 @@
     font-display: swap;
 }
 
+:root {
+    --white: hsl(0, 0%, 100%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,8 +34,8 @@
 body {
     font-family: 'Outfit', sans-serif;
     font-size: 10px;
-    background-color: hsl(30, 54%, 90%);
-    color: hsl(30, 10%, 34%);
+    background-color: var(--stone-100);
+    color: var(--stone-600);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -34,7 +45,7 @@ body {
 }
 
 .content {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,19 +70,19 @@ body {
 
 h1 {
     font-family: 'young-serif', serif;
-    color: hsl(24, 5%, 18%);
+    color: var(--stone-900);
     font-weight: 300;
     font-size: 28px;
 }
 
 .preparation-time {
-    background-color: hsl(330, 100%, 98%);
+    background-color: var(--rose-50);
     border-radius: 10px;
     padding: 16px;
 }
 
 .time-title {
-    color: hsl(332, 51%, 32%);
+    color: var(--rose-800);
     font-size: 14px;
     font-weight: 600;
 }
@@ -92,35 +103,32 @@ h1 {
 }
 
 .time li::marker {
-    color: hsl(332, 51%, 32%);
+    color: var(--rose-800);
     font-size: 6px;
 }
 
 h2 {
     font-family: 'young-serif', serif;
-    color: hsl(14, 45%, 36%);
+    color: var(--brown-800);
     font-weight: 400;
     font-size: 18px;
 }
 
 .ingredients li::marker {
-    color: hsl(14, 45%, 36%);
+    color: var(--brown-800);
     font-size: 6px;
 }
 
 hr {
     border: none;
-    /* On enlève le style par défaut moche */
-    border-top: 1px solid hsl(30, 18%, 87%);
-    /* On crée une vraie ligne fine */
+    border-top: 1px solid var(--stone-150);
+    /* for a thin line */
     width: 100%;
-    /* On s'assure qu'elle prend toute la largeur */
-    margin: 20px 0;
-    /* On lui donne de l'air en haut et en bas */
+    margin: 20px;
 }
 
 .instructions li::marker {
-    color: hsl(14, 45%, 36%);
+    color: var(--brown-800);
     font-weight: bold;
 }
 
@@ -130,7 +138,7 @@ table {
 }
 
 td {
-    border-block: 1px solid hsl(30, 18%, 87%);
+    border-block: 1px solid var(--stone-150);
     padding: 8px 0 8px 16px;
     font-size: 11px;
 }
@@ -141,13 +149,13 @@ tr:last-child td {
 }
 
 .nutrition-value {
-    color: hsl(14, 45%, 36%);
+    color: var(--brown-800);
     font-weight: bold;
 }
 
 .attribution a {
     text-decoration: none;
-    color: hsl(24, 5%, 18%);
+    color: var(--stone-900);
     font-weight: 600;
 }
 
@@ -156,6 +164,6 @@ tr:last-child td {
 }
 
 .attribution a:focus-visible {
-    outline: 2px solid hsl(24, 5%, 18%);
+    outline: 2px solid var(--stone-900);
     border-radius: 2px;
 }
