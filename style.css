@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'young-serif';
+    src: url('fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 10px;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(90%, 450px);
+    border-radius: 16px;
+    padding: 24px;
+    margin: auto;
+}
+
+.recipe-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.image-omelette {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'young-serif', serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.time-title {
+    color: hsl(332, 51%, 32%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.time,
+.ingredients,
+.instructions {
+    padding-left: 16px;
+    /* Space between the points and the border */
+}
+
+.time li,
+.ingredients li,
+.instructions li {
+    padding-left: 14px;
+    /* Space between the points and the text*/
+    margin-block: 4px;
+}
+
+.time li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 6px;
+}
+
+h2 {
+    font-family: 'young-serif', serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 6px;
+}
+
+hr {
+    border: none;
+    /* On enlève le style par défaut moche */
+    border-top: 1px solid hsl(30, 18%, 87%);
+    /* On crée une vraie ligne fine */
+    width: 100%;
+    /* On s'assure qu'elle prend toute la largeur */
+    margin: 20px 0;
+    /* On lui donne de l'air en haut et en bas */
+}
+
+.instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border-block: 1px solid hsl(30, 18%, 87%);
+    padding: 8px 0 8px 16px;
+    font-size: 11px;
+}
+
+tr:first-child td,
+tr:last-child td {
+    border: none;
+}
+
+.nutrition-value {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(24, 5%, 18%);
+    font-weight: 600;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+.attribution a:focus-visible {
+    outline: 2px solid hsl(24, 5%, 18%);
+    border-radius: 2px;
+}
