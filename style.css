@@ -48,7 +48,7 @@ body {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: min(90%, 450px);
     border-radius: 16px;
@@ -82,6 +82,7 @@ h1 {
 }
 
 .time-title {
+    font-family: 'young-serif', serif;
     color: var(--rose-800);
     font-size: 14px;
     font-weight: 600;
